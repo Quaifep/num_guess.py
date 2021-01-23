@@ -5,10 +5,10 @@
 print("Enter the integer for the player to guess. ")
 ans = int(input())
 guesses_taken = 0
-print("Enter your guess")
+print("Enter your guess.")
 guess = int(input())
 for i in range(guesses_taken, guesses_taken + 1):
-    guesses_taken = 0
+    guesses_taken += 0
     if guess == ans:
         print("You guessed it in", guesses_taken + 1, "try.")
         break
@@ -21,6 +21,5 @@ for i in range(guesses_taken, guesses_taken + 1):
             print("Too high - try again:")
             guess = int(input())
         elif guess == ans:
-            guesses_taken = int(guesses_taken)
-            print("You guessed it in", guesses_taken, "tries.")
+            print("You guessed it in", guesses_taken + 1, "tries.")
             break
